@@ -1,0 +1,230 @@
+/* Styling for the main body of every page */
+
+
+/* -------------------------------------
+-----Basic styling for each page-----
+------------------------------------- */
+
+/* Variables */
+:root {
+    --background-card-size: 60%;
+    --main-font: myHandwriting;
+}
+
+/* custom font */
+@font-face {
+    font-family: myHandwriting;
+    src: url(../src/font/customFont.ttf);
+}
+
+/* Make the scrolling less jankey */
+*{
+    scroll-behavior: smooth;
+}
+
+/* Set background colour to black */
+body {
+    background-color: black;
+}
+
+/* Setting the dimensions, font and font colour used in the main body */
+#mainBody {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color:aliceblue;
+    font-family: var(--main-font);
+}
+
+
+/* ---------------------------
+-----Background Images-----
+--------------------------- */
+
+
+/* Background image for homepage */
+#homeCover{
+    /* Set height to the height of the viewport */
+    height: 100vh;
+    /* Flex makes it easier to position elements without disturbing other elements */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* Set the background image */
+    background: url(../src/images/dark.gif);
+    /* Stops it overlapping with header on page load */
+    padding-top: -10%;
+    /* Good size on all screen sizes */
+    background-size: var(--background-card-size);
+    /* we want the gif to be centered */
+    background-position:center;
+    /* Stops the gif from being tiled across the page */
+    background-repeat: no-repeat;
+}
+
+/* Background image for notes page */
+#notesCover{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: url(../src/images/notesCoverWide.JPG);
+    padding-top: -10%;
+    background-size: var(--background-card-size);
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+/* Background image for projects page */
+#projectsCover{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: url(../src/images/projectsCoverWide.JPG);
+    padding-top: -10%;
+    background-size: var(--background-card-size);
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+/* Background image for bug reports page */
+#bugsCover{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: url(../src/images/bugsCoverWide.JPG);
+    padding-top: -10%;
+    background-size: var(--background-card-size);
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+/* Background image for contact page */
+#contactCover{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: url(../src/images/contactCoverWide.JPG);
+    padding-top: -10%;
+    background-size: var(--background-card-size);
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+
+/* --------------------
+-----Paragraphs-----
+-------------------- */
+
+/* Set the font size for paragraphs */
+.paragraphs{
+    font-size: 30px;
+    /* Ensures that it stays away from the edge of the page */
+    width: 50vw;
+}
+
+
+/* ------------------
+-----Headings-----
+------------------ */
+
+/* Container for subheading so that they can be positioned better */
+#headings {
+    display: flex;
+    justify-content: center;
+}
+
+.subHeading{
+    font-size: 50px;
+    text-align: center;
+    margin-right: 40px;
+}
+
+
+/* -----------------------
+-----Body Sections-----
+----------------------- */
+
+/* The main sections of each page after the cover image */
+.mainBodySections {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 50px;
+    /* Adds space between each section */
+    padding-bottom: 20vh;   
+}
+
+
+/* ----------------------------------
+-----Images used on the pages-----
+---------------------------------- */
+
+.logo{
+    width: 250px;
+    height: auto;
+    /* make image round */
+    border-radius: 50%;
+    
+}
+
+
+/* ------------------------------
+-----Notes page specifics-----
+------------------------------ */
+
+/* The images used for each topic */
+.notes {
+    width: 250px;
+    height: auto;
+}
+
+/* The captions under the images ("figures")*/
+.noteCaptions {
+    font-size: 30px;
+    text-align: center;
+}
+
+/* --------------------------------
+-----Contact page specifics-----
+-------------------------------- */
+
+ /* Inputs */
+ input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px;
+    resize: vertical 
+    
+  }
+  label {
+    font-size: 30px;
+  }
+  
+  /* Submit button */
+  input[type=submit] {
+    background-color: rgba(0, 255, 200, 0.689);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: rgba(0, 187, 146, 0.596);
+  }
+  
+  /* background for the form*/
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  } 

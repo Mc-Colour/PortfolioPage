@@ -1,0 +1,127 @@
+/* A good width I think, it is the difference between being landscape / portrait on a tablet or mobile */
+@media only screen and (max-width: 1000px) {
+    /* ----------------------
+    -----Header Stuff-----
+    ---------------------- */
+
+    header{
+        /* Makes header rounded */
+        border-radius: 0 0 2.5px 2.5px;
+        background-color: black;
+        /* Makes header skinnier */
+        height: 40px;
+    }
+
+    /* Hides the top header links (we use side header instead) */
+    .topHeader {
+        /* Display: none stops it from affecting the other elements, I could have used z index but I prefer this */
+        display: none;
+    }
+    
+    /* Displays the burger rather than hiding it */
+    #burgerLogo {
+        display:block;
+        cursor:pointer;
+    }
+
+    /* Hides the accessibility button from the top header (it is already implemented in side header) */
+    #changeFont {
+        display:none;
+    }
+
+    /* Makes the "Athenason" text green to match the burger */
+    #home {
+        color: #00bc8e;
+    }
+
+    
+    /* ----------------------------------
+    -----Mobile Background Images-----
+    ---------------------------------- */
+
+    /* Home background image is set to the portrait version */
+    #homeCover{
+        background-image: url(../src/images/cover.JPG);
+        background-size: 100%;
+    }
+
+    /* Notes background image is set to the portrait version */
+    #notesCover{
+        background-image: url(../src/images/notesCoverMobile.JPG);
+        background-size: 100%;
+    }
+
+    /* Projects background image is set to the portrait version */
+    #projectsCover{
+        background-image: url(../src/images/projectsCoverMobile.JPG);
+        background-size: 100%;
+    }
+
+    /* Bug reports background image is set to the portrait version */
+    #bugsCover{
+        background-image: url(../src/images/bugsCoverMobile.JPG);
+        background-size: 100%;
+    }
+
+    /* Contact background image is set to the portrait version */
+    #contactCover{
+        background-image: url(../src/images/contactCoverMobile.JPG);
+        background-size: 100%;
+    }
+
+
+    /* -----------------------
+    -----Body Sections-----
+    ----------------------- */
+
+    /* Makes the main body sections flex vertically, so it is more suited to narrow screens. */
+    .mainBodySections {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-left: 5vh;
+        padding-bottom: 20vh;   
+    }
+
+
+    /* --------------------
+    -----Paragraphs-----
+    -------------------- */
+    .paragraphs{
+        font-size: 30px;
+        width: 80vw;
+        padding-right: 5vh;
+    }
+
+
+    /* ----------------------------------
+    -----Images used on the pages-----
+    ---------------------------------- */
+    .logo{
+        margin-right: 5vh;
+        width:200px;
+    }
+
+
+    /* --------------------------
+    -----Reorder Elements-----
+    -------------------------- */
+
+    /* Set the image in the education section of the home page to be before the paragraph */
+    #eduLogo {
+        order: 1;
+    }
+    #eduPara {
+        order: 2;
+    }
+
+    /* Set the image in the goNetScan section of the notes page to be before the paragraph */
+    #netScanLogo {
+        order: 1;
+    }
+    #netScanPara {
+        order: 2;
+    }   
+    
+}

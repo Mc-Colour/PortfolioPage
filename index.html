@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- So github does not throw a policy error -->
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <!-- Standard head stuff -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athenason's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles/header.css">
+    <link rel="stylesheet" type="text/css" href="styles/body.css">
+    <link rel="stylesheet" type="text/css" href="styles/mobile.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/headerFade.js" type="text/javascript"></script>
+</head>
+<body>
+    <!--Header is a container for links-->
+    <header>
+        <a id="home" href="index.html">Athenason</a>
+        <!--nag tav defines a set of links-->
+        <nav>
+            <ul class="topHeader">
+                <!--Navigation to other pages-->
+                <li><a class="link" href="#education">Education</a></li>
+                <li><a class="link" href="#skills">Skills</a></li>
+                <li><a class="link" href="projects/">Projects</a></li>
+                <li><a class="link" href="notes/">Notes</a></li>
+                <li><a class="link" href="bugReports/">Bug Reports</a></li>
+                <li><a class="link" href="contact/">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="accessibility">
+            <img id="changeFont" src="src/images/font.JPG" alt="Change Font">
+        </div>
+        <div class="burger">
+            <img id="burgerLogo" src="src/images/burger.JPG" alt="Burger Icon">
+        </div>
+    </header> 
+    <div id="sideHeader">
+        <nav>
+            <ul class="sideHeader">
+                <!--Navigation to other pages-->
+                <li><a class="link" href="#education">Education</a></li>
+                <li><a class="link" href="#skills">Skills</a></li>
+                <li><a class="link" href="projects/">Projects</a></li>
+                <li><a class="link" href="notes/">Notes</a></li>
+                <li><a class="link" href="bugReports/">Bugs</a></li>
+                <li><a class="link" href="contact/">Contact</a></li>
+                <li><img id="changeFontSide" src="src/images/font.JPG" alt="Change Font"></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="mainBody">
+        <div id="homeCover">
+        </div>
+        <div id="headings">
+            <h3 class="subHeading">About Me</h3>
+        </div>
+        <div id="secondSection" class="mainBodySections">
+            <img class="logo" src="src/images/profile.JPG" alt="Profile Image">
+            <p class="paragraphs">I am a Cyber Security student studying at the University of Chester. I have a keen interest
+                in games development, programming, web development and cyber secuirty. On this site you can
+                see various projects I am working on, some of the notes I have taken along the way and you can also get in 
+                contact with me or report bugs.</p> 
+        </div>
+        <div id="education" class="mainBodySections">
+            <p id="eduPara" class="paragraphs">I have 10 GCSEs: Chemistry, Biology, Physics, Mathematics, Spanish, History, English Language,
+                English Literature, Textiles and Computer Science. I have an A-level in Computer Science, and a BTEC National Diploma 
+                in Information Technology. I have music certifications in piano and music theory, and I am currently studying a 
+                Bachelor of Science (with Honours) in Cyber Security.
+            </p>
+            <img id="eduLogo" class="logo" src="src/images/education.JPG" alt="Education logo - a mortarboard hat infront of an open book">
+        </div>
+        <div id="skills" class="mainBodySections">
+            <img class="logo" src="src/images/skills.PNG" alt="Skills logo - a wrench inside a cog">
+            <p class="paragraphs">I have some experience in Java, HTML, CSS, Go and SQL Server, as well as C# and Unity. I am currently in the process of 
+                learning JavaScript, C++, Python, Git, and MySQL. I also have non technical skills that I have developed, including
+                firm communication skills from previously tutoring younger students, the ability to break down problems so that they
+                are easily solvable and the ability to switch between independent or collaborative development and still be productive.
+            </p>
+        </div>
+    </div> 
+</body>
+</html>
