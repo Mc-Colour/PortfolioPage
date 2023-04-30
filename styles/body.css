@@ -8,14 +8,15 @@
 /* Variables */
 :root {
     --background-card-size: 60%;
-    --main-font: myHandwriting;
+    --main-font: tilt;
 }
 
 /* custom font */
 @font-face {
-    font-family: myHandwriting;
-    src: url(../src/font/customFont.ttf);
+    font-family: tilt;
+    src: url(../src/font/tilt.ttf);
 }
+
 
 /* Make the scrolling less jankey */
 *{

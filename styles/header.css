@@ -10,14 +10,14 @@ header{
     /* Sets the font to the one defined in the :root section of body.css */
     font-family: var(--main-font);
     font-size: 30px;
-    background-color: black;
+    background-color: #333333;
     height: 40px;
 }
 
 /* Makes the header solid when the user hovers on it */
 header:hover{
     opacity: 1;
-    background-color: black;
+    background-color: #333333;
 }
 
 /* Class added to header by headerFade.js, hides the header, but the transition makes it a smooth animation */
