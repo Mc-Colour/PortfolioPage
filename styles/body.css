@@ -8,7 +8,7 @@
 /* Variables */
 :root {
     --background-card-size: 60%;
-    --main-font: tilt;
+    --main-font: myHandwriting;
 }
 
 /* custom font */
@@ -16,7 +16,10 @@
     font-family: tilt;
     src: url(../src/font/tilt.ttf);
 }
-
+@font-face {
+    font-family: myHandwriting;
+    src: url(../src/font/customFont.ttf);
+}
 
 /* Make the scrolling less jankey */
 *{
@@ -33,8 +36,10 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
-    color:aliceblue;
+    color:black;
+    background-color: white;
     font-family: var(--main-font);
+    border-radius: 25px;
 }
 
 
@@ -61,19 +66,7 @@ body {
     background-position:center;
     /* Stops the gif from being tiled across the page */
     background-repeat: no-repeat;
-}
-
-/* Background image for notes page */
-#notesCover{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background: url(../src/images/notesCoverWide.JPG);
-    padding-top: -10%;
-    background-size: var(--background-card-size);
-    background-position:center;
-    background-repeat: no-repeat;
+    background-color: #333333;
 }
 
 /* Background image for projects page */
@@ -89,18 +82,6 @@ body {
     background-repeat: no-repeat;
 }
 
-/* Background image for bug reports page */
-#bugsCover{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background: url(../src/images/bugsCoverWide.JPG);
-    padding-top: -10%;
-    background-size: var(--background-card-size);
-    background-position:center;
-    background-repeat: no-repeat;
-}
 
 /* Background image for contact page */
 #contactCover{
@@ -142,6 +123,7 @@ body {
     font-size: 50px;
     text-align: center;
     margin-right: 40px;
+    font-family: tilt;
 }
 
 

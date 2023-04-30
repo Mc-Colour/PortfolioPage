@@ -2,16 +2,25 @@
 -----First Header Container-----
 -------------------------------- */
 
+@font-face {
+    font-family: myHandwriting;
+    src: url(../src/font/customFont.ttf);
+}
+
 header{
-    width: 100%;
+    width: 95%;
     display: inline-flex;
     justify-content: space-around;
     position:fixed;
     /* Sets the font to the one defined in the :root section of body.css */
-    font-family: var(--main-font);
+    font-family: tilt;
     font-size: 30px;
     background-color: #333333;
     height: 40px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    margin-left: 2%;
+
 }
 
 /* Makes the header solid when the user hovers on it */
@@ -45,6 +54,7 @@ header:hover{
     text-decoration: none;
     color: aliceblue;
     font-size: 40px;
+    margin-right: 50%;
 }
 
 
@@ -58,13 +68,13 @@ header:hover{
     /* Adds spacing between the header elements */
     margin: 5px;
     padding: 5px 5px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 /* Link hover animation */
 .link:hover {
-    background: rgba(0, 255, 200, 0.689);
-    border-radius: 20px;
+    background: #9cfe70;
+    border-radius: 10px;
     color: black;
 }
 
@@ -118,12 +128,13 @@ header:hover{
     align-items: center;
     border-radius: 10px;
     border: solid;
-    border-color: #00bc8e;
-    background-color: black;
+    border-color: #9cfe70;
+    background-color: #333333;
     /* Hide it until used on narrow screen (width < 1000) */
     display: none;
     opacity: 0;
     transition: all 0.5s ease-in-out; 
+    list-style: none;
 }
 .sideHeader .link{
     margin-right: 40px;

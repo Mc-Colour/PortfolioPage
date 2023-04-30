@@ -42,22 +42,10 @@ function disableSideDisplay() {
     sideHeader.classList.remove("showSideHeader");
 }
 
-function changeFontFunc() {
-    const root = document.querySelector(":root");
-    rootStyle = getComputedStyle(root);
-    if (rootStyle.getPropertyValue("--main-font") == " myHandwriting"){
-        root.style.setProperty("--main-font", " Verdana, sans-serif");
-    } else {
-        root.style.setProperty("--main-font", " myHandwriting");
-    }
-}
+
 
 
 window.onload = () => {
     const burger = document.querySelector("#burgerLogo");
-    const changeFont = document.querySelector("#changeFont");
-    const changeFontSide = document.querySelector("#changeFontSide");
-    changeFont.addEventListener("click", changeFontFunc);
-    changeFontSide.addEventListener("click", changeFontFunc);
     burger.addEventListener("click", showSideHeader);
 }

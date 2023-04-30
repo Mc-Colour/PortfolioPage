@@ -7,9 +7,11 @@
     header{
         /* Makes header rounded */
         border-radius: 0 0 2.5px 2.5px;
-        background-color: black;
+        background-color: #333333;
         /* Makes header skinnier */
         height: 40px;
+        width: 100%;
+        margin-left: 0;
     }
 
     /* Hides the top header links (we use side header instead) */
@@ -22,6 +24,7 @@
     #burgerLogo {
         display:block;
         cursor:pointer;
+        margin-top: 8px;
     }
 
     /* Hides the accessibility button from the top header (it is already implemented in side header) */
@@ -31,42 +34,22 @@
 
     /* Makes the "Athenason" text green to match the burger */
     #home {
-        color: #00bc8e;
+        color: #9cfe70;
+        margin-right: 0%;
     }
 
     
     /* ----------------------------------
     -----Mobile Background Images-----
     ---------------------------------- */
-
-    /* Home background image is set to the portrait version */
     #homeCover{
-        background-image: url(../src/images/cover.JPG);
-        background-size: 100%;
+        background-size: 150%;
     }
-
-    /* Notes background image is set to the portrait version */
-    #notesCover{
-        background-image: url(../src/images/notesCoverMobile.JPG);
-        background-size: 100%;
-    }
-
-    /* Projects background image is set to the portrait version */
     #projectsCover{
-        background-image: url(../src/images/projectsCoverMobile.JPG);
-        background-size: 100%;
+        background-size: 150%;
     }
-
-    /* Bug reports background image is set to the portrait version */
-    #bugsCover{
-        background-image: url(../src/images/bugsCoverMobile.JPG);
-        background-size: 100%;
-    }
-
-    /* Contact background image is set to the portrait version */
     #contactCover{
-        background-image: url(../src/images/contactCoverMobile.JPG);
-        background-size: 100%;
+        background-size: 150%;
     }
 
 
