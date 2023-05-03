@@ -8,7 +8,7 @@
 /* Variables */
 :root {
     --background-card-size: 60%;
-    --main-font: myHandwriting;
+    --main-font: 'roboto-slab';
 }
 
 /* custom font */
@@ -20,6 +20,15 @@
     font-family: myHandwriting;
     src: url(../src/font/customFont.ttf);
 }
+
+@font-face {
+    font-family: roboto-slab;
+    src: url(../src/font/RobotoSlab-Light.ttf);
+}  
+@font-face {
+    font-family: league-spartan;
+    src: url(../src/font/LeagueSpartan-Bold.otf);
+} 
 
 /* Make the scrolling less jankey */
 *{
@@ -57,7 +66,7 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     /* Set the background image */
-    background: url(../src/images/dark.gif);
+    background: url(../src/images/dark.gif.gif);
     /* Stops it overlapping with header on page load */
     padding-top: -10%;
     /* Good size on all screen sizes */
@@ -103,7 +112,7 @@ body {
 
 /* Set the font size for paragraphs */
 .paragraphs{
-    font-size: 30px;
+    font-size: 25px;
     /* Ensures that it stays away from the edge of the page */
     width: 50vw;
 }

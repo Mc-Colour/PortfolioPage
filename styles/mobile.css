@@ -34,7 +34,7 @@
 
     /* Makes the "Athenason" text green to match the burger */
     #home {
-        color: #9cfe70;
+        color: white;
         margin-right: 0%;
     }
 
@@ -44,12 +44,15 @@
     ---------------------------------- */
     #homeCover{
         background-size: 150%;
+        /* margin-right: 15px; */
     }
     #projectsCover{
         background-size: 150%;
+        margin-right: 15px;
     }
     #contactCover{
         background-size: 150%;
+        margin-right: 15px;
     }
 
 
@@ -72,7 +75,7 @@
     -----Paragraphs-----
     -------------------- */
     .paragraphs{
-        font-size: 30px;
+        font-size: 20px;
         width: 80vw;
         padding-right: 5vh;
     }

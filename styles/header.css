@@ -54,7 +54,7 @@ header:hover{
     text-decoration: none;
     color: aliceblue;
     font-size: 40px;
-    margin-right: 50%;
+    margin-right: 40%;
 }
 
 
@@ -81,9 +81,10 @@ header:hover{
 /* The burger */
 #burgerLogo {
     width: 30px;
-    padding-top: 8px;
+    padding-top: 10px;
     /* Hide the burger */
     display: none;
+    margin-right: 10px;
 }
 
 /* The accessibility button on top header*/
@@ -121,8 +122,8 @@ header:hover{
     flex-direction: column;
     justify-content: space-evenly;
     position: fixed;
-    font-family: var(--main-font);
-    font-size: 30px;
+    font-family: tilt;
+    font-size: 25px;
     /* Should be big enough for even the smallest screens */
     width:80px;
     align-items: center;
